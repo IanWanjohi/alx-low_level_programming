@@ -3,14 +3,13 @@
  * print_alphabet - Entry point
  * Return:0
  */
-int print_alphabet(void)
+void print_alphabet(void)
 {
-	char c = 'a';
+	char i;
 
-	while (c <= 'z')
+	for (i = 'a' ; i <= 'z' ; i++)
 	{
 		_putchar(c);
-		c++;
 
 	}
 	_putchar('\n');

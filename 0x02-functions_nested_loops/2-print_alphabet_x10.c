@@ -1,11 +1,21 @@
 #include "main.h"
 /**
- * _islower - check for lower case letter
- * @c : character to check the case
- * Return:0 or 1
+ * print_alphabet_x10 - function that prints 10x alphabets
+ *
+ * Return: 0
  */
-int _islower(int c)
+void print_alphabet_x10(void)
 {
-	return (c >= 97 && c <= 122);
+	int i;
+	char j;
+
+	for (i = 1 ; i <= 10 ; i++)
+	{
+		for (j = 'a' ; j <= 'z' ; j++)
+		{
+			_putchar(j);
+		}
+		_putchar('\n');
+	}
 
 }
